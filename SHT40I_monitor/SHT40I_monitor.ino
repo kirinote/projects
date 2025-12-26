@@ -44,10 +44,12 @@ void setup() {
 //  Serial.print("sending temp -> ");
 //  Serial.println(temp);
   temperature1->save(temp);
+  delay(500);
 
 //  Serial.print("sending humi -> ");
 //  Serial.println(humi);
   humidity1->save(humi);
+  delay(500);
 
   // --- Deep Sleep --- //
 
