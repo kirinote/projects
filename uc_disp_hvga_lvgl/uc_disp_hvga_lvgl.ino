@@ -169,11 +169,6 @@ void setup(void) {
   // SDカードのCSピンを一旦High(非アクティブ)にする
   digitalWrite(SD_CS, HIGH);
 
-  // 使用するSPI1バスのピン割り当てを設定
-  SPI1.setRX(SPI1_MISO);
-  SPI1.setTX(SPI1_MOSI);
-  SPI1.setSCK(SPI1_CLK);
-
   // LovyanGFXの初期化とディスプレイの基本構成設定
   display.init();
   display.setBrightness(0);   // 起動時はバックライトを消灯しておく
